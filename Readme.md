@@ -3,6 +3,8 @@
 
   Respond to http requests with [co streams](https://github.com/juliangruber/co-stream).
 
+  [![build status](https://secure.travis-ci.org/juliangruber/co-respond.png)](http://travis-ci.org/juliangruber/co-respond)
+
 ## Example
 
   Respond with a stream that yields a string three times.
