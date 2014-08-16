@@ -73,12 +73,14 @@ test('ends', function(t){
   .get('/')
   .expect(200)
   .expect('bobbobbob', function(err){
-    t.error(err, 'sane');
-    t.equal(called, 4, 'called four times');
-    t.equal(ended, 1, 'ended once');
-    t.assert(responded, 'responded');
-    server.close();
-    t.end();
+    setTimeout(function(){
+      t.error(err, 'sane');
+      t.equal(called, 4, 'called four times');
+      t.equal(ended, 1, 'ended once');
+      t.assert(responded, 'responded');
+      server.close();
+      t.end();
+    });
   });
 });
 
