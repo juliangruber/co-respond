@@ -6,7 +6,7 @@
   "repository": "juliangruber/co-respond",
   "dependencies": {
     "co": "~3.0.4",
-    "finished": "~1.1.1"
+    "on-finished": "~2.0.0"
   },
   "devDependencies": {
     "tap": "~0.4.8",

@@ -5,7 +5,7 @@
 
 var Readable = require('stream').Readable;
 var co = require('co');
-var finished = require('finished');
+var finished = require('on-finished');
 
 /**
  * Respond to `res` with `stream`.
